@@ -45,12 +45,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -127,6 +132,61 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BanBe.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietHD.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChuDe.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ErrorModel.cs" />
+    <Compile Include="Models\GopY.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HangHoa.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HoaDon.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HoiDap.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\KhachHang.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Loai.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhaCungCap.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhanVien.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShoppingModels.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingModels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShoppingModels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShoppingModels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingModels.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\YeuThich.cs">
+      <DependentUpon>ShoppingModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +237,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\ShoppingModels.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ShoppingModels.Context.cs</LastGenOutput>
+      <DependentUpon>ShoppingModels.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ShoppingModels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShoppingModels.edmx</DependentUpon>
+      <LastGenOutput>ShoppingModels.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\Shopping\fonts\icomoon\fonts\icomoon.eot" />
@@ -272,6 +342,13 @@
     <Content Include="Content\Shopping\scss\_site-base.scss" />
     <Content Include="Content\Shopping\scss\_site-blocks.scss" />
     <Content Include="Content\Shopping\scss\_site-navbar.scss" />
+    <EntityDeploy Include="Models\ShoppingModels.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ShoppingModels.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ShoppingModels.edmx.diagram">
+      <DependentUpon>ShoppingModels.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -315,6 +392,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
