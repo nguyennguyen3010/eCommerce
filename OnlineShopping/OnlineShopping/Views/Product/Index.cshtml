@@ -1,4 +1,4 @@
-﻿    
+﻿@model List<OnlineShopping.Models.HangHoa>
 @{
     ViewBag.Title = "Index";
 }
@@ -49,156 +49,23 @@
                             </div>
                         </div>
                         <div class="row mb-5">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                    <div class="block-4 text-center border">
 
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/cloth_1.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Tank Top</a></h3>
-                                        <p class="mb-0">Finding perfect t-shirt</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/shoe_1.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Corater</a></h3>
-                                        <p class="mb-0">Finding perfect products</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/cloth_2.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Polo Shirt</a></h3>
-                                        <p class="mb-0">Finding perfect products</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
+                                        <figure class="block-4-image">
+                                            <a href="shop-single.html"><img src="@item.Hinh" alt="Image placeholder" class="img-fluid"></a>
+                                        </figure>
+                                        <div class="block-4-text p-4">
+                                            <h3><a href="shop-single.html">@item.TenHH</a></h3>
+                                            <p class="mb-0">@item.MoTa</p>
+                                            <p class="text-primary font-weight-bold">@item.DonGia</p>
+                                        </div>
 
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/cloth_3.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">T-Shirt Mockup</a></h3>
-                                        <p class="mb-0">Finding perfect products</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/shoe_1.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Corater</a></h3>
-                                        <p class="mb-0">Finding perfect products</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/cloth_1.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Tank Top</a></h3>
-                                        <p class="mb-0">Finding perfect t-shirt</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/shoe_1.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Corater</a></h3>
-                                        <p class="mb-0">Finding perfect products</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/cloth_2.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Polo Shirt</a></h3>
-                                        <p class="mb-0">Finding perfect products</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/cloth_3.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">T-Shirt Mockup</a></h3>
-                                        <p class="mb-0">Finding perfect products</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/shoe_1.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Corater</a></h3>
-                                        <p class="mb-0">Finding perfect products</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/cloth_1.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Tank Top</a></h3>
-                                        <p class="mb-0">Finding perfect t-shirt</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                                <div class="block-4 text-center border">
-                                    <figure class="block-4-image">
-                                        <a href="shop-single.html"><img src="@Url.Content("~/Content/Shopping/images/cloth_2.jpg")" alt="Image placeholder" class="img-fluid"></a>
-                                    </figure>
-                                    <div class="block-4-text p-4">
-                                        <h3><a href="shop-single.html">Polo Shirt</a></h3>
-                                        <p class="mb-0">Finding perfect products</p>
-                                        <p class="text-primary font-weight-bold">$50</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
+                            }
                         </div>
                         <div class="row" data-aos="fade-up">
                             <div class="col-md-12 text-center">
@@ -279,7 +146,7 @@
                                 <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
                                     <a class="block-2-item" href="#">
                                         <figure class="image">
-                                            <img src="@Url.Content("~/Content/Shopping/images/women.jpg" )"alt="" class="img-fluid">
+                                            <img src="@Url.Content("~/Content/Shopping/images/women.jpg" )" alt="" class="img-fluid">
                                         </figure>
                                         <div class="text">
                                             <span class="text-uppercase">Collections</span>
@@ -290,7 +157,7 @@
                                 <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
                                     <a class="block-2-item" href="#">
                                         <figure class="image">
-                                            <img src="@Url.Content("~/Content/Shopping/images/children.jpg" )"alt="" class="img-fluid">
+                                            <img src="@Url.Content("~/Content/Shopping/images/children.jpg" )" alt="" class="img-fluid">
                                         </figure>
                                         <div class="text">
                                             <span class="text-uppercase">Collections</span>
@@ -314,14 +181,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        
     </div>
-
-
-
 </body>
 
