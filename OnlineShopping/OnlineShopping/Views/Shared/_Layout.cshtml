@@ -3,9 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Shopping/fonts/icomoon/style.css")">
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/Shopping/css/bootstrap.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Shopping/css/magnific-popup.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Shopping/css/jquery-ui.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Shopping/css/owl.carousel.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Shopping/css/owl.theme.default.min.css")">
+
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/Shopping/css/aos.css")">
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/Shopping/css/style.css")">
 </head>
 <body>
     <div class="site-wrap">
@@ -50,7 +63,7 @@
                 <div class="container">
                     <ul class="site-menu js-clone-nav d-none d-md-block">
                         <li class="has-children active">
-                            <a href="index.html">Home</a>
+                            <a href="@Url.Action("Index", "Home")">Home</a>
                             <ul class="dropdown">
                                 <li><a href="#">Menu One</a></li>
                                 <li><a href="#">Menu Two</a></li>
@@ -66,7 +79,7 @@
                             </ul>
                         </li>
                         <li class="has-children">
-                            <a href="about.html">About</a>
+                            <a href="@Url.Action("About", "Home")">About</a>
                             <ul class="dropdown">
                                 <li><a href="#">Menu One</a></li>
                                 <li><a href="#">Menu Two</a></li>
@@ -76,15 +89,14 @@
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="#">Catalogue</a></li>
                         <li><a href="#">New Arrivals</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
     </div>
+    @RenderBody()
     <div class="container body-content">
-        @RenderBody()
-        <hr />
         <footer class="site-footer border-top">
             <div class="container">
                 <div class="row">
@@ -156,13 +168,20 @@
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
-
                 </div>
             </div>
         </footer>
-
     </div>
 
+    <script src="@Url.Content("~/Content/Shopping/js/jquery-3.3.1.min.js")"></script>
+    <script src="@Url.Content("~/Content/Shopping/js/jquery-ui.js")"></script>
+    <script src="@Url.Content("~/Content/Shopping/js/popper.min.js")"></script>
+    <script src="@Url.Content("~/Content/Shopping/js/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Content/Shopping/js/owl.carousel.min.js")"></script>
+    <script src="@Url.Content("~/Content/Shopping/js/jquery.magnific-popup.min.js")"></script>
+    <script src="@Url.Content("~/Content/Shopping/js/aos.js")"></script>
+
+    <script src="@Url.Content("~/Content/Shopping/js/main.js")"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
