@@ -214,6 +214,7 @@
     <Content Include="Content\Shopping\images\cloth_1.jpg" />
     <Content Include="Content\Shopping\images\cloth_2.jpg" />
     <Content Include="Content\Shopping\images\cloth_3.jpg" />
+    <Content Include="Content\Shopping\images\update.png" />
     <Content Include="Content\Shopping\images\hero_1.jpg" />
     <Content Include="Content\Shopping\images\hero_1.png" />
     <Content Include="Content\Shopping\images\men.jpg" />
