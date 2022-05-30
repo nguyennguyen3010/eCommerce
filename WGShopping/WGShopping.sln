@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WGShopping", "WGShopping\WGShopping.csproj", "{4C82DAD5-7A35-412D-ACBF-E85EC3651FEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WGShopping", "WGShopping\WGShopping.csproj", "{A6A4D5D0-47C2-4D97-AB61-F7905B22442E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4C82DAD5-7A35-412D-ACBF-E85EC3651FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C82DAD5-7A35-412D-ACBF-E85EC3651FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C82DAD5-7A35-412D-ACBF-E85EC3651FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C82DAD5-7A35-412D-ACBF-E85EC3651FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A4D5D0-47C2-4D97-AB61-F7905B22442E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A4D5D0-47C2-4D97-AB61-F7905B22442E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A4D5D0-47C2-4D97-AB61-F7905B22442E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A4D5D0-47C2-4D97-AB61-F7905B22442E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C2E9B897-95F2-43C0-8F33-FFC3523F65A9}
+		SolutionGuid = {4224186E-041C-4805-BB98-570B68A0D26C}
 	EndGlobalSection
 EndGlobal
